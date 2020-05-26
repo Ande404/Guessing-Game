@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Guessing Game | Andrew Luwaga</title>
+        <h:outputStylesheet name="css/style.css"  />
+       <link href="https://fonts.googleapis.com/css2?family=Teko" rel="stylesheet"/>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet"/>
+    </h:head>
+    <h:body>
+
+        <div id="content">
+            <div class="center container">
+                
+                <div class="header">
+                   <p>- GUESSING GAME -</p> 
+                </div>
+                
+                <div class="fine-print">
+                    <p>Guess a number from 1  to 10</p>
+                </div>
+
+                <div class="section">
+                    <div class="guess">
+                        <h2>GUESS:</h2>
+                        <!-- to input a value into our backend java bean we use input-Text enclosed with in a form -->
+                        <h:form><h:inputText styleClass="input" value="#{guessingGameBean.userGuess}"/></h:form>
+                    </div>
+                    <div class="answer">
+                        <h2>ANSWER:</h2>
+                        <!-- we call the java bean backend by using the java Bean name and the field/method we want to access -->
+                        <p><h:outputText value="#{guessingGameBean.answer}"/></p>
+                    </div>
+                </div>
+
+
+                <div class="score">
+                    <p>SCORE: <h:outputText value="#{guessingGameBean.score}"/></p>
+                </div>
+            </div>
+
+        </div>
+
+    </h:body>
+</html>
+
