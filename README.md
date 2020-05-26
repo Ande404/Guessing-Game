@@ -9,9 +9,6 @@ Your IDE of choice has to have a server integerated within it preferably any Wil
 ## Demo
 ![demo](/images/guessGame.png)
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
